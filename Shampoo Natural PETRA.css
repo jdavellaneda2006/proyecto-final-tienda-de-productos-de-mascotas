@@ -146,7 +146,7 @@ body {
     height: 200px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     .detalle-producto-container {
         flex-direction: column;
