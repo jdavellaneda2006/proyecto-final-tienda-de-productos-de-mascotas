@@ -8,7 +8,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Contenedor Principal (Tarjeta Blanca) */
 .detalle-producto-container {
     max-width: 1100px;
     margin: 60px auto;
@@ -22,7 +21,7 @@ body {
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Columna de la Imagen (Izquierda) */
+
 .columna-imagen {
     flex: 1;
     display: flex;
@@ -38,12 +37,12 @@ body {
     object-fit: contain;
 }
 
-/* Columna de Información (Derecha) */
+
 .columna-info {
     flex: 1;
 }
 
-/* Breadcrumbs (Productos / Higiene) */
+
 .breadcrumbs {
     font-family: 'Sigmar One', sans-serif;
     font-size: 14px;
@@ -56,7 +55,7 @@ body {
     text-decoration: none;
 }
 
-/* Título del Producto */
+
 .producto-titulo {
     font-family: 'Sigmar One', sans-serif; 
     font-size: 42px;
@@ -65,7 +64,7 @@ body {
     line-height: 1.2;
 }
 
-/* Subtítulo (HIGIENE Y CUIDADO DEL PELAJE) */
+
 .producto-subtitulo {
     font-family: 'Sigmar One', sans-serif;
     font-size: 18px;
@@ -74,7 +73,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Precio ($25.000) */
 .producto-precio {
     font-family: 'Sigmar One', sans-serif;
     font-size: 36px;
@@ -82,7 +80,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Párrafo de Descripción */
 .producto-descripcion {
     font-family: 'Sigmar One', sans-serif;
     font-size: 14px;
@@ -91,7 +88,6 @@ body {
     margin-bottom: 35px;
 }
 
-/* Botón Agregar al Carrito */
 .btn-agregar-grande {
     width: 100%;
     max-width: 350px;
@@ -112,7 +108,7 @@ body {
     transform: translateY(-3px);
 }
 
-/* SECCIÓN DE PRODUCTOS SUGERIDOS */
+
 .productos-sugeridos {
     padding: 80px 40px;
     background: #fdfdfd;
@@ -143,7 +139,6 @@ body {
     height: 200px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .detalle-producto-container {
         flex-direction: column;
