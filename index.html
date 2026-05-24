@@ -1,249 +1,446 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VitalPet</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Carrito VitalPet</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-       <link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
- <link rel="stylesheet" href="marca.css">
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
+
+<link rel="stylesheet" href="carrito.css">
 
 </head>
 
 <body>
- <header>
 
-        <nav class="navbar">
+<header>
 
-            <h1 class="logo">VitalPet</h1>
+<nav class="navbar">
 
-            <ul class="menu">
+<h1 class="logo">VitalPet</h1>
 
-                <li><a href="#inicio">Inicio</a></li>
+<ul class="menu">
 
-                <li><a href="#productos">Productos</a></li>
+<li><a href="index.html#inicio">Inicio</a></li>
 
-                <li><a href="carrito.html">Carrito</a></li>
+<li><a href="index.html#productos">Productos</a></li>
 
-                <li><a href="#nosotros">Nosotros</a></li>
+<li><a href="carrito.html">Carrito</a></li>
 
-                <li><a href="#contacto">Contacto</a></li>
+<li><a href="index.html#nosotros">Nosotros</a></li>
 
-            </ul>
+<li><a href="index.html#contacto">Contacto</a></li>
 
-        </nav>
+</ul>
 
-    </header>
-  <section class="hero" id="inicio">
+</nav>
 
-        <div class="hero-contenido">
+</header>
 
-            <h2>
-                Bienestar y cuidado para tus mascotas
-            </h2>
+<section class="carrito-container">
 
-            <p>
-                Productos de higiene, alimentación y entretenimiento
-                diseñados para mejorar la vida de tus mascotas.
-            </p>
+<div class="productos-carrito">
 
-            <a href="#productos" class="btn">
-                Explorar productos
-            </a>
+<h2>Mi carrito</h2>
 
-        </div>
+</div>
 
-    </section>
- <section class="productos" id="productos">
+<div class="resumen-compra">
 
-        <h2 class="titulo-seccion">
-            Productos Destacados
-        </h2>
+<h3>Resumen</h3>
 
-        <div class="contenedor-productos">
-  <div class="card">
+<div class="subtotal">
 
- <img src="	https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo">
+<p>SUBTOTAL</p>
 
-                <div class="info-card">
+<span id="subtotal">$0</span>
 
-                    <h3>Shampoo Natural PETRA</h3>
+</div>
 
-                    <p>Higiene y cuidado del pelaje.</p>
+<div class="metodo-pago">
 
-                    <span>$25.000</span>
+<h4>Método de pago</h4>
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+<select>
 
-                </div>
+<option>Tarjeta Débito</option>
 
-            </div>
-   <div class="card">
+<option>Tarjeta Crédito</option>
 
-                <img src="	https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="Alimento">
+<option>Nequi</option>
 
-                <div class="info-card">
+<option>Daviplata</option>
 
-                    <h3>Alimento Premium DOG CHOW</h3>
+<option>PayPal</option>
 
-                    <p>Nutrición saludable y balanceada.</p>
+</select>
 
-                    <span>$40.000</span>
+</div>
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+<div class="formulario-pago">
 
-                </div>
+<h4>Datos del pago</h4>
 
-            </div>
-  <div class="card">
+<input type="text" placeholder="Nombre completo">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s" alt="Juguete">
+<input type="text" placeholder="Número de tarjeta">
 
-                <div class="info-card">
+<input type="text" placeholder="Fecha de vencimiento">
 
-                    <h3>Juguete Interactivo Uga bone</h3>
+<input type="password" placeholder="CVV">
 
-                    <p>Diversión y entretenimiento.</p>
+</div>
 
-                    <span>$18.000</span>
+<button class="btn-pagar" id="btnPagar">
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+Proceder al pago
 
-                </div>
+</button>
 
-            </div>
-<div class="card">
+</div>
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXTgoIHO7sV_eaa0lB8Jylma1cx4eUc14cw&s" alt="Cama">
+</section>
 
-                <div class="info-card">
+<section class="recomendados">
 
-                    <h3>Cama Suave dona gris alelí</h3>
+<h2>Productos recomendados</h2>
 
-                    <p>Comodidad y descanso.</p>
+<div class="contenedor-recomendados">
 
-                    <span>$55.000</span>
+<div class="card-recomendado">
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+<img src="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo">
 
-                </div>
+<h3>Shampoo PETRA</h3>
 
-            </div>
+<p>$25.000</p>
 
- <div class="card">
+<button class="agregar-recomendado"
+data-nombre="Shampoo PETRA"
+data-precio="25000"
+data-img="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg">
 
-                <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
+AGREGAR
 
-                <div class="info-card">
+</button>
 
-                    <h3>Collar Ajustable, cuero rojo</h3>
+</div>
 
-                    <p>Seguridad y estilo.</p>
+<div class="card-recomendado">
 
-                    <span>$20.000</span>
+<img src="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="DOG CHOW">
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+<h3>Alimento DOG CHOW</h3>
 
-                </div>
+<p>$40.000</p>
 
-            </div>
- <div class="card">
+<button class="agregar-recomendado"
+data-nombre="Alimento DOG CHOW"
+data-precio="40000"
+data-img="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png">
 
-                <img src="	https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks">
+AGREGAR
 
-                <div class="info-card">
+</button>
 
-                    <h3>Snacks saludables happy tails</h3>
+</div>
 
-                    <p>Premios nutritivos.</p>
+<div class="card-recomendado">
 
-                    <span>$15.000</span>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s" alt="Juguete">
 
-                    <button class="btn-carrito">
-                        Agregar al carrito
-                    </button>
+<h3>Juguete Uga Bone</h3>
 
-                </div>
+<p>$18.000</p>
 
-            </div>
+<button class="agregar-recomendado"
+data-nombre="Juguete Uga Bone"
+data-precio="18000"
+data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s">
 
-        </div>
+AGREGAR
 
-    </section>
-<section class="nosotros" id="nosotros">
- <div class="contenido-nosotros">
+</button>
 
-            <h2>
-                Sobre VitalPet
-            </h2>
+</div>
 
-            <p>
-                Somos una tienda enfocada en el bienestar,
-                cuidado y comodidad de las mascotas.
-                Buscamos brindar una experiencia amigable,
-                rápida y confiable para cada usuario.
-            </p>
+<div class="card-recomendado">
 
-        </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXTgoIHO7sV_eaa0lB8Jylma1cx4eUc14cw&s" alt="Cama">
 
-    </section>
- <section class="contacto" id="contacto">
+<h3>Cama Dona Gris</h3>
 
-        <h2>
-            Contáctanos
-        </h2>
+<p>$55.000</p>
 
-        <p>vitalpet@gmail.com</p>
+<button class="agregar-recomendado"
+data-nombre="Cama Dona Gris"
+data-precio="55000"
+data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXTgoIHO7sV_eaa0lB8Jylma1cx4eUc14cw&s">
 
-        <p>+57 302 8391 656</p>
+AGREGAR
 
-    </section>
- <footer class="footer">
+</button>
 
-        <h3>VitalPet</h3>
+</div>
 
-        <p>
-            Síguenos en nuestras redes sociales
-        </p>
+<div class="card-recomendado">
 
-        <div class="redes-sociales">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
 
-            <a href="#">
-                <img src="https://www.freeiconspng.com/uploads/youtube-logo-png-photo-0.png" alt="YouTube">
-            </a>
+<h3>Collar Ajustable</h3>
 
-            <a href="#">
-                <img src="https://images.icon-icons.com/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="X">
-            </a>
+<p>$20.000</p>
 
-            <a href="#">
-                <img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo.png" alt="Instagram">
-            </a>
+<button class="agregar-recomendado"
+data-nombre="Collar Ajustable"
+data-precio="20000"
+data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s">
 
-        </div>
+AGREGAR
 
-        <p class="copy">
-            © 2026 VitalPet - Todos los derechos reservados
-        </p>
+</button>
 
-    </footer>
+</div>
+
+<div class="card-recomendado">
+
+<img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks">
+
+<h3>Snacks Happy Tails</h3>
+
+<p>$15.000</p>
+
+<button class="agregar-recomendado"
+data-nombre="Snacks Happy Tails"
+data-precio="15000"
+data-img="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg">
+
+AGREGAR
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<h3>VitalPet</h3>
+
+<p>Síguenos en nuestras redes sociales</p>
+
+<div class="redes-sociales">
+
+<a href="#">
+<img src="https://www.freeiconspng.com/uploads/youtube-logo-png-photo-0.png" alt="YouTube">
+</a>
+
+<a href="#">
+<img src="https://images.icon-icons.com/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="X">
+</a>
+
+<a href="#">
+<img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo.png" alt="Instagram">
+</a>
+
+</div>
+
+<p class="copy">
+
+© 2026 VitalPet - Todos los derechos reservados
+
+</p>
+
+</footer>
+
+<script>
+
+const carrito = document.querySelector(".productos-carrito");
+
+const subtotalTexto = document.getElementById("subtotal");
+
+function actualizarSubtotal(){
+
+let subtotal = 0;
+
+const productos = document.querySelectorAll(".item-carrito");
+
+productos.forEach(producto => {
+
+const precioTexto = producto.querySelector(".precio").textContent;
+
+const cantidad = parseInt(
+producto.querySelector(".cantidad").textContent
+);
+
+const precio = parseInt(
+precioTexto.replace("$","").replace(/\./g,"")
+);
+
+subtotal += precio * cantidad;
+
+});
+
+subtotalTexto.textContent =
+"$" + subtotal.toLocaleString("es-CO");
+
+}
+
+function activarBotones(){
+
+const botonesMas = document.querySelectorAll(".mas");
+
+const botonesMenos = document.querySelectorAll(".menos");
+
+const botonesEliminar = document.querySelectorAll(".eliminar");
+
+botonesMas.forEach(boton => {
+
+boton.onclick = () => {
+
+const cantidad =
+boton.parentElement.querySelector(".cantidad");
+
+cantidad.textContent =
+parseInt(cantidad.textContent) + 1;
+
+actualizarSubtotal();
+
+};
+
+});
+
+botonesMenos.forEach(boton => {
+
+boton.onclick = () => {
+
+const cantidad =
+boton.parentElement.querySelector(".cantidad");
+
+let valor = parseInt(cantidad.textContent);
+
+if(valor > 1){
+
+cantidad.textContent = valor - 1;
+
+actualizarSubtotal();
+
+}
+
+};
+
+});
+
+botonesEliminar.forEach(boton => {
+
+boton.onclick = () => {
+
+boton.closest(".item-carrito").remove();
+
+actualizarSubtotal();
+
+};
+
+});
+
+}
+
+const botonesAgregar =
+document.querySelectorAll(".agregar-recomendado");
+
+botonesAgregar.forEach(boton => {
+
+boton.addEventListener("click", () => {
+
+const nombre = boton.dataset.nombre;
+
+const precio = boton.dataset.precio;
+
+const imagen = boton.dataset.img;
+
+const nuevoProducto = document.createElement("div");
+
+nuevoProducto.classList.add("item-carrito");
+
+nuevoProducto.innerHTML = `
+
+<img src="${imagen}" alt="${nombre}">
+
+<div class="info-producto">
+
+<h3>${nombre}</h3>
+
+<p>Producto agregado al carrito.</p>
+
+<span class="precio">
+$${parseInt(precio).toLocaleString("es-CO")}
+</span>
+
+<div class="controles">
+
+<button class="menos">-</button>
+
+<span class="cantidad">1</span>
+
+<button class="mas">+</button>
+
+<button class="eliminar">
+
+Eliminar
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+carrito.appendChild(nuevoProducto);
+
+activarBotones();
+
+actualizarSubtotal();
+
+});
+
+});
+
+activarBotones();
+
+const btnPagar =
+document.getElementById("btnPagar");
+
+btnPagar.addEventListener("click", () => {
+
+const productos =
+document.querySelectorAll(".item-carrito");
+
+if(productos.length === 0){
+
+alert("Tu carrito está vacío.");
+
+}
+
+else{
+
+alert(
+"Pago realizado correctamente. ¡Gracias por comprar en VitalPet!"
+);
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
-
-
