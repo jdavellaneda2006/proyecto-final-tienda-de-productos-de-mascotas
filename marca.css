@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Bauhaus Soft Black';
-    src: url('../fonts/BauhausSoftBlack.ttf');
-}
 
 
 
@@ -30,7 +26,7 @@ body{
 }
 
 .logo{
-    font-family: 'Bauhaus Soft Black';
+   font-family: 'Bauhaus', sans-serif;
 
     color: #ffe500;
 
@@ -71,7 +67,6 @@ body{
 
     text-align: center;
 
-   
 }
 
 .hero-contenido{
@@ -79,7 +74,7 @@ body{
 }
 
 .hero-contenido h2{
-    font-family: 'Bauhaus Soft Black';
+    font-family: 'Bauhaus', sans-serif;
 
     font-size: 70px;
 
@@ -123,10 +118,11 @@ body{
 
     background: #ffe500;
 
+ 
 }
 
 .titulo-seccion{
-    font-family: 'Bauhaus Soft Black';
+    font-family: 'Bauhaus', sans-serif;
 
     font-size: 55px;
 
@@ -178,7 +174,7 @@ body{
 }
 
 .info-card h3{
-    font-family: 'Bauhaus Soft Black';
+font-family: 'Bauhaus', sans-serif;
 
     color: #81a46c;
 
@@ -233,11 +229,11 @@ body{
 
     text-align: center;
 
-    
+  
 }
 
 .contenido-nosotros h2{
-    font-family: 'Bauhaus Soft Black';
+font-family: 'Bauhaus', sans-serif;
 
     font-size: 55px;
 
@@ -267,11 +263,10 @@ body{
 
     background: #ffe500;
 
-  
 }
 
 .contacto h2{
-    font-family: 'Bauhaus Soft Black';
+font-family: 'Bauhaus', sans-serif;
 
     font-size: 50px;
 
@@ -323,7 +318,7 @@ body{
 }
 
 .footer h3{
-    font-family: 'Bauhaus Soft Black';
+ font-family: 'Bauhaus', sans-serif;
 
     font-size: 45px;
 
@@ -343,3 +338,4 @@ body{
 
     color: white;
 }
+
