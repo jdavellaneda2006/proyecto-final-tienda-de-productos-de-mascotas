@@ -243,6 +243,43 @@
         </p>
 
     </footer>
+<script>
 
+const botonesCarrito =
+document.querySelectorAll(".btn-carrito");
+
+botonesCarrito.forEach((boton) => {
+
+boton.addEventListener("click", () => {
+
+const card = boton.closest(".card");
+
+const nombre =
+card.querySelector("h3").textContent;
+
+const precio =
+card.querySelector("span").textContent;
+
+const imagen =
+card.querySelector("img").src;
+
+const producto = {
+nombre: nombre,
+precio: precio,
+imagen: imagen
+};
+
+localStorage.setItem(
+"carrito",
+JSON.stringify([producto])
+);
+
+window.location.href = "carrito.html";
+
+});
+
+});
+
+</script>
 </body>
 </html>
