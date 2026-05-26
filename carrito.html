@@ -108,6 +108,10 @@
 
 </div>
 
+<div class="mensaje-error" id="mensajeError">
+Completa toda la información antes de continuar.
+</div>
+
 <button class="btn-pagar" id="btnPagar">
 
 Proceder al pago
@@ -272,6 +276,46 @@ AGREGAR
 
 </footer>
 
+<!-- MODAL COMPRA REALIZADA -->
+
+<div class="modal-compra" id="mensajeCompra">
+
+<div class="modal-contenido">
+
+<h2>¡Compra realizada!</h2>
+
+<p>
+Gracias por comprar en VitalPet 🐾
+</p>
+
+<button id="cerrarMensaje" class="btn-cerrar">
+Cerrar
+</button>
+
+</div>
+
+</div>
+
+<!-- MODAL CARRITO VACÍO -->
+
+<div class="modal-compra" id="mensajeVacio">
+
+<div class="modal-contenido">
+
+<h2>Carrito vacío</h2>
+
+<p>
+Debes agregar al menos un producto al carrito.
+</p>
+
+<button id="cerrarVacio" class="btn-cerrar">
+Aceptar
+</button>
+
+</div>
+
+</div>
+
 <script>
 
 const carrito = document.querySelector(".productos-carrito");
@@ -354,7 +398,32 @@ botonesEliminar.forEach(boton => {
 
 boton.onclick = () => {
 
-boton.closest(".item-carrito").remove();
+const item =
+boton.closest(".item-carrito");
+
+const nombre =
+item.querySelector("h3").textContent;
+
+item.remove();
+
+let carritoActual =
+JSON.parse(localStorage.getItem("carrito")) || [];
+
+const index =
+carritoActual.findIndex(producto =>
+producto.nombre === nombre
+);
+
+if(index !== -1){
+
+carritoActual.splice(index,1);
+
+}
+
+localStorage.setItem(
+"carrito",
+JSON.stringify(carritoActual)
+);
 
 actualizarSubtotal();
 
@@ -415,6 +484,22 @@ Eliminar
 
 carrito.appendChild(nuevoProducto);
 
+const producto = {
+nombre: nombre,
+precio: "$" + parseInt(precio).toLocaleString("es-CO"),
+imagen: imagen
+};
+
+const carritoActual =
+JSON.parse(localStorage.getItem("carrito")) || [];
+
+carritoActual.push(producto);
+
+localStorage.setItem(
+"carrito",
+JSON.stringify(carritoActual)
+);
+
 activarBotones();
 
 actualizarSubtotal();
@@ -422,6 +507,7 @@ actualizarSubtotal();
 });
 
 });
+
 const productosGuardados =
 JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -468,8 +554,6 @@ carrito.appendChild(nuevoProducto);
 
 });
 
-localStorage.removeItem("carrito");
-
 activarBotones();
 
 actualizarSubtotal();
@@ -484,21 +568,81 @@ document.querySelectorAll(".item-carrito");
 
 if(productos.length === 0){
 
-alert("Tu carrito está vacío.");
+document.getElementById("mensajeVacio")
+.style.display = "flex";
+
+return;
+
+}
+
+const inputs =
+document.querySelectorAll(
+".formulario-pago input, .direccion-envio input"
+);
+
+let formularioCompleto = true;
+
+inputs.forEach(input => {
+
+if(input.value.trim() === ""){
+
+formularioCompleto = false;
+
+input.style.border = "2px solid red";
 
 }
 
 else{
 
-alert(
-"Pago realizado correctamente. ¡Gracias por comprar en VitalPet!"
-);
+input.style.border = "2px solid #81a46c";
 
 }
 
 });
 
-</script>
+if(!formularioCompleto){
 
+document.getElementById("mensajeError")
+.style.display = "block";
+
+return;
+
+}
+
+document.getElementById("mensajeError")
+.style.display = "none";
+
+const mensaje =
+document.getElementById("mensajeCompra");
+
+mensaje.style.display = "flex";
+
+localStorage.removeItem("carrito");
+
+});
+
+const cerrarMensaje =
+document.getElementById("cerrarMensaje");
+
+cerrarMensaje.addEventListener("click", () => {
+
+document.getElementById("mensajeCompra")
+.style.display = "none";
+
+location.reload();
+
+});
+
+const cerrarVacio =
+document.getElementById("cerrarVacio");
+
+cerrarVacio.addEventListener("click", () => {
+
+document.getElementById("mensajeVacio")
+.style.display = "none";
+
+});
+
+</script>
 </body>
 </html>
