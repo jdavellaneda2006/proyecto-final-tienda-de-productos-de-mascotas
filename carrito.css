@@ -40,6 +40,7 @@ body{
 .menu a:hover{
     color: #ffe500;
 }
+
 .carrito-container{
     display: flex;
     justify-content: space-between;
@@ -64,6 +65,7 @@ body{
     color: #81a46c;
     margin-bottom: 30px;
 }
+
 .item-carrito{
     display: flex;
     gap: 25px;
@@ -101,6 +103,7 @@ body{
     font-size: 30px;
     color: #81a46c;
 }
+
 .controles{
     margin-top: 20px;
     display: flex;
@@ -118,6 +121,12 @@ body{
     color: white;
     font-size: 25px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.mas:hover,
+.menos:hover{
+    background: black;
 }
 
 .cantidad{
@@ -132,6 +141,11 @@ body{
     color: white;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.eliminar:hover{
+    background: #81a46c;
 }
 
 .resumen-compra{
@@ -171,10 +185,21 @@ body{
     border-radius: 15px;
     border: 2px solid #81a46c;
     font-family: 'Sigmar One', sans-serif;
+    outline: none;
+    transition: 0.3s;
 }
+
+.metodo-pago select:focus,
+.formulario-pago input:focus,
+.direccion-envio input:focus{
+    border-color: black;
+    transform: scale(1.01);
+}
+
 .direccion-envio{
     margin-bottom: 30px;
 }
+
 .btn-pagar{
     width: 100%;
     padding: 18px;
@@ -185,11 +210,14 @@ body{
     font-size: 18px;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn-pagar:hover{
     background: black;
+    transform: scale(1.02);
 }
+
 .recomendados{
     padding: 100px 80px;
     background: #81a46c;
@@ -215,6 +243,11 @@ body{
     border-radius: 30px;
     padding: 20px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card-recomendado:hover{
+    transform: translateY(-8px);
 }
 
 .card-recomendado img{
@@ -244,7 +277,14 @@ body{
     background: #ffe500;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+.agregar-recomendado:hover{
+    background: black;
+    color: white;
+}
+
 .footer{
     background: #81a46c;
     padding: 60px 20px;
@@ -261,6 +301,7 @@ body{
     color: white;
     margin-bottom: 15px;
 }
+
 .redes-sociales{
     display: flex;
     justify-content: center;
@@ -270,11 +311,17 @@ body{
 
 .redes-sociales img{
     width: 45px;
+    transition: 0.3s;
+}
+
+.redes-sociales img:hover{
+    transform: scale(1.15);
 }
 
 .copy{
     font-size: 14px;
 }
+
 @media(max-width: 1100px){
 
     .carrito-container{
@@ -314,6 +361,90 @@ body{
     .recomendados h2{
         font-size: 55px;
         text-align: center;
+    }
+
+}
+
+/* MODAL DE COMPRA */
+
+.modal-compra{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-contenido{
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    animation: aparecer 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-contenido h2{
+    font-family: 'Bauhaus', sans-serif;
+    font-size: 55px;
+    color: #81a46c;
+    margin-bottom: 20px;
+}
+
+.modal-contenido p{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-cerrar{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 15px;
+    background: #81a46c;
+    color: white;
+    font-family: 'Sigmar One', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-cerrar:hover{
+    background: black;
+    transform: scale(1.08);
+}
+
+/* MENSAJE DE ERROR */
+
+.mensaje-error{
+    background: #ffdddd;
+    color: #a10000;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: none;
+    border: 2px solid #ff8c8c;
+}
+
+@keyframes aparecer{
+
+    from{
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
     }
 
 }
