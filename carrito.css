@@ -203,7 +203,32 @@ body{
     border-color: black;
     transform: scale(1.01);
 }
+.fecha-vencimiento{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 2px solid #81a46c;
+    outline: none;
+    transition: 0.3s;
+    background: white;
+    color: #333;
+    cursor: pointer;
 
+    /* Fuente más limpia */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.fecha-vencimiento:focus{
+    border-color: black;
+    transform: scale(1.01);
+}
+
+.fecha-vencimiento::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 .direccion-envio{
     margin-bottom: 30px;
 }
@@ -354,7 +379,6 @@ body{
     font-size: 14px;
 }
 
-/* MODAL DE COMPRA */
 
 .modal-compra{
     position: fixed;
@@ -411,7 +435,7 @@ body{
     transform: scale(1.08);
 }
 
-/* MENSAJE DE ERROR */
+
 
 .mensaje-error{
     background: #ffdddd;
