@@ -12,7 +12,7 @@
 
 body{
     font-family: 'Sigmar One', sans-serif;
-    background: #ffe500;
+    background: #f7eb85;
 }
 
 .navbar{
@@ -21,12 +21,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 25px 70px;
-    background: #81a46c;
+    background: #3d5a1d;
 }
 
 .logo{
     font-family: 'Bauhaus', sans-serif;
-    color: #ffe500;
+    color: #f7eb85;
     font-size: 55px;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 .menu a:hover{
-    color: #ffe500;
+    color: #f7eb85;
 }
 
 .carrito-container{
@@ -68,7 +68,7 @@ body{
 
 .productos-carrito h2{
     font-size: 75px;
-    color: #81a46c;
+    color: #3d5a1d;
     margin-bottom: 30px;
 }
 
@@ -96,7 +96,7 @@ body{
 
 .info-producto h3{
     font-family: 'Bauhaus', sans-serif;
-    color: #81a46c;
+    color: #3d5a1d;
     font-size: 38px;
     margin-bottom: 10px;
 }
@@ -108,7 +108,7 @@ body{
 
 .precio{
     font-size: 30px;
-    color: #81a46c;
+    color: #3d5a1d;
 }
 
 .controles{
@@ -124,7 +124,7 @@ body{
     height: 45px;
     border: none;
     border-radius: 50%;
-    background: #81a46c;
+    background: #3d5a1d;
     color: white;
     font-size: 25px;
     cursor: pointer;
@@ -152,7 +152,7 @@ body{
 }
 
 .eliminar:hover{
-    background: #81a46c;
+    background: #3d5a1d;
 }
 
 .resumen-compra{
@@ -165,7 +165,7 @@ body{
 
 .resumen-compra h3{
     font-size: 60px;
-    color: #81a46c;
+    color: #3d5a1d;
     margin-bottom: 30px;
 }
 
@@ -191,7 +191,7 @@ body{
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 15px;
-    border: 2px solid #81a46c;
+    border: 2px solid #3d5a1d;
     font-family: 'Sigmar One', sans-serif;
     outline: none;
     transition: 0.3s;
@@ -208,7 +208,7 @@ body{
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 15px;
-    border: 2px solid #81a46c;
+    border: 2px solid #3d5a1d;
     outline: none;
     transition: 0.3s;
     background: white;
@@ -238,7 +238,7 @@ body{
     padding: 18px;
     border: none;
     border-radius: 15px;
-    background: #81a46c;
+    background: #3d5a1d;
     color: white;
     font-size: 18px;
     font-family: 'Sigmar One', sans-serif;
@@ -253,13 +253,13 @@ body{
 
 .recomendados{
     padding: 100px 80px;
-    background: #81a46c;
+    background: #3d5a1d;
 }
 
 .recomendados h2{
     text-align: center;
     font-size: 70px;
-    color: #ffe500;
+    color: #f7eb85;
     margin-bottom: 50px;
 }
 
@@ -293,7 +293,7 @@ body{
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255,229,0,0.15);
+    background: #f7eb85;
     transition: 0.5s;
 }
 
@@ -310,7 +310,7 @@ body{
 
 .card-recomendado h3{
     font-family: 'Bauhaus', sans-serif;
-    color: #81a46c;
+    color: #3d5a1d;
     font-size: 35px;
     margin-top: 20px;
 }
@@ -325,7 +325,7 @@ body{
     padding: 15px;
     border: none;
     border-radius: 15px;
-    background: #ffe500;
+    background: #f7eb85;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
     transition: 0.3s;
@@ -343,14 +343,14 @@ body{
 }
 
 .footer{
-    background: #81a46c;
+    background: #3d5a1d;
     padding: 60px 20px;
     text-align: center;
 }
 
 .footer h3{
     font-size: 55px;
-    color: #ffe500;
+    color: #f7eb85;
     margin-bottom: 15px;
 }
 
@@ -407,7 +407,7 @@ body{
 .modal-contenido h2{
     font-family: 'Bauhaus', sans-serif;
     font-size: 55px;
-    color: #81a46c;
+    color: #3d5a1d;
     margin-bottom: 20px;
 }
 
@@ -421,7 +421,7 @@ body{
     padding: 15px 35px;
     border: none;
     border-radius: 15px;
-    background: #81a46c;
+    background: #3d5a1d;
     color: white;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
