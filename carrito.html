@@ -92,8 +92,8 @@
 type="text"
 id="fechaVencimiento"
 class="fecha-vencimiento"
-placeholder="Fecha de vencimiento "
-maxlength="5"
+placeholder="DD/MM/AAAA"
+maxlength="10"
 >
 
 <input type="password" placeholder="CVV">
@@ -140,7 +140,7 @@ Proceder al pago
 
 <img src="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo">
 
-<h3>Shampoo PETRA</h3>
+<h3>Shampoo PETRA aloe vera</h3>
 
 <p>$25.000</p>
 
@@ -224,6 +224,8 @@ AGREGAR
 
 </a>
 
+<a href="Collar Ajustable cuero rojo.html" class="link-producto">
+
 <div class="card-recomendado">
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
@@ -243,61 +245,20 @@ AGREGAR
 
 </div>
 
-<div class="card-recomendado">
+</a>
+<a href="Snacks saludables happy tails.html" class="link-producto">
 
-<img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks">
+    <div class="card-recomendado">
 
-<h3>Snacks Happy Tails</h3>
+        <img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks Happy Tails">
 
-<p>$15.000</p>
+        <h3>Snacks Happy Tails</h3>
+<p>Producto sin stock ⚠️</p>       
+ </div>
 
-<button class="agregar-recomendado"
-data-nombre="Snacks Happy Tails"
-data-precio="15000"
-data-img="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg">
-
-AGREGAR
-
-</button>
-
-</div>
-
-</div>
+</a>
 
 </section>
-
-<footer class="footer">
-
-<h3>VitalPet</h3>
-
-<p>Síguenos en nuestras redes sociales</p>
-
-<div class="redes-sociales">
-
-<a href="#">
-<img src="https://www.freeiconspng.com/uploads/youtube-logo-png-photo-0.png" alt="YouTube">
-</a>
-
-<a href="#">
-<img src="https://images.icon-icons.com/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="X">
-</a>
-
-<a href="#">
-<img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo.png" alt="Instagram">
-</a>
-
-</div>
-
-<p class="copy">
-
-© 2026 VitalPet - Todos los derechos reservados
-
-</p>
-
-</footer>
-
-
-
 <div class="modal-compra" id="mensajeCompra">
 
 <div class="modal-contenido">
@@ -614,21 +575,14 @@ input.style.border = "2px solid red";
 
 else{
 
-input.style.border = "2px solid #81a46c";
-
+input.style.border = "2px solid #3d5a1d";
 }
-
 });
-
 if(!formularioCompleto){
-
 document.getElementById("mensajeError")
 .style.display = "block";
-
 return;
-
 }
-
 document.getElementById("mensajeError")
 .style.display = "none";
 
@@ -650,9 +604,7 @@ document.getElementById("mensajeCompra")
 .style.display = "none";
 
 location.reload();
-
 });
-
 const cerrarVacio =
 document.getElementById("cerrarVacio");
 
@@ -662,7 +614,6 @@ document.getElementById("mensajeVacio")
 .style.display = "none";
 
 });
-
 </script>
 </body>
 </html>
