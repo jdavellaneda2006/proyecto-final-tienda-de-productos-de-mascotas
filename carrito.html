@@ -1,93 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Carrito VitalPet</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-
 <link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
-
 <link rel="stylesheet" href="carrito.css">
-
 </head>
-
 <body>
-
 <header>
-
 <nav class="navbar">
-
 <h1 class="logo">VitalPet</h1>
-
 <ul class="menu">
-
 <li><a href="index.html#inicio">Inicio</a></li>
-
 <li><a href="index.html#productos">Productos</a></li>
-
 <li><a href="carrito.html">Carrito</a></li>
-
 <li><a href="index.html#nosotros">Nosotros</a></li>
-
 <li><a href="index.html#contacto">Contacto</a></li>
-
 </ul>
-
 </nav>
-
 </header>
-
 <section class="carrito-container">
-
 <div class="productos-carrito">
-
 <h2>Mi carrito</h2>
-
 </div>
-
 <div class="resumen-compra">
-
 <h3>Resumen</h3>
-
 <div class="subtotal">
-
 <p>SUBTOTAL</p>
-
 <span id="subtotal">$0</span>
-
 </div>
-
 <div class="metodo-pago">
-
 <h4>Método de pago</h4>
-
 <select>
-
 <option>Tarjeta Débito</option>
 <option>Tarjeta Crédito</option>
 <option>Nequi</option>
 <option>Daviplata</option>
 <option>PayPal</option>
-
 </select>
-
 </div>
-
 <div class="formulario-pago">
-
 <h4>Datos del pago</h4>
-
 <input type="text" placeholder="Nombre completo">
-
 <input type="text" placeholder="Número de tarjeta">
-
 <input 
 type="text"
 id="fechaVencimiento"
@@ -95,486 +54,280 @@ class="fecha-vencimiento"
 placeholder="DD/MM/AAAA"
 maxlength="10"
 >
-
 <input type="password" placeholder="CVV">
-
 </div>
-
 <div class="direccion-envio">
-
 <h4>Dirección de envío</h4>
-
 <input type="text" placeholder="Ciudad">
-
 <input type="text" placeholder="Dirección completa">
-
 <input type="text" placeholder="Apartamento / Casa">
-
 <input type="text" placeholder="Teléfono de contacto">
-
 </div>
-
 <div class="mensaje-error" id="mensajeError">
 Completa toda la información antes de continuar.
 </div>
-
 <button class="btn-pagar" id="btnPagar">
-
 Proceder al pago
-
 </button>
-
 </div>
-
 </section>
-
 <section class="recomendados">
-
 <h2>Productos recomendados</h2>
-
 <div class="contenedor-recomendados">
-
 <a href="Shampoo Natural PETRA.html" class="link-producto">
-
 <div class="card-recomendado">
-
 <img src="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo">
-
 <h3>Shampoo PETRA aloe vera</h3>
-
 <p>$25.000</p>
-
 <button class="agregar-recomendado"
 data-nombre="Shampoo PETRA"
 data-precio="25000"
 data-img="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg">
-
 AGREGAR
-
 </button>
-
 </div>
-
 </a>
-
 <a href="Alimento premium DOG SHOW.html" class="link-producto">
-
 <div class="card-recomendado">
-
 <img src="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="DOG CHOW">
-
 <h3>Alimento DOG CHOW</h3>
-
 <p>$40.000</p>
-
 <button class="agregar-recomendado"
 data-nombre="Alimento DOG CHOW"
 data-precio="40000"
 data-img="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png">
-
 AGREGAR
-
 </button>
-
 </div>
-
 <a href="Juguete interactivo UGA BONE.html" class="link-producto">
-
 <div class="card-recomendado">
-
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s" alt="Juguete">
-
 <h3>Juguete UGA BONE</h3>
-
 <p>$18.000</p>
-
 <button class="agregar-recomendado"
 data-nombre="Juguete UGA BONE"
 data-precio="18000"
 data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s">
-
 AGREGAR
-
 </button>
-
 </div>
-
 </a>
-
 <a href="Cama Suave dona gris alelí.html" class="link-producto">
-
 <div class="card-recomendado">
-
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXTgoIHO7sV_eaa0lB8Jylma1cx4eUc14cw&s" alt="Cama">
-
 <h3>Cama Suave Dona Gris Alelí</h3>
-
 <p>$55.000</p>
-
 <button class="agregar-recomendado"
 data-nombre="Cama Suave Dona Gris Alelí"
 data-precio="55000"
 data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXTgoIHO7sV_eaa0lB8Jylma1cx4eUc14cw&s">
-
 AGREGAR
-
 </button>
-
 </div>
-
 </a>
-
 <a href="Collar Ajustable cuero rojo.html" class="link-producto">
-
 <div class="card-recomendado">
-
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
-
 <h3>Collar Ajustable</h3>
-
 <p>$20.000</p>
-
 <button class="agregar-recomendado"
 data-nombre="Collar Ajustable"
 data-precio="20000"
 data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s">
-
 AGREGAR
-
 </button>
-
 </div>
-
 </a>
 <a href="Snacks saludables happy tails.html" class="link-producto">
-
     <div class="card-recomendado">
-
-        <img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks Happy Tails">
-
-        <h3>Snacks Happy Tails</h3>
+<img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks Happy Tails">
+ <h3>Snacks Happy Tails</h3>
 <p>Producto sin stock ⚠️</p>       
  </div>
-
 </a>
-
 </section>
 <div class="modal-compra" id="mensajeCompra">
-
 <div class="modal-contenido">
-
 <h2>¡Compra realizada!</h2>
-
 <p>
 Gracias por comprar en VitalPet 🐾
 </p>
-
 <button id="cerrarMensaje" class="btn-cerrar">
 Cerrar
 </button>
-
 </div>
-
 </div>
-
-
-
 <div class="modal-compra" id="mensajeVacio">
-
 <div class="modal-contenido">
-
 <h2>Carrito vacío</h2>
-
 <p>
 Debes agregar al menos un producto al carrito.
 </p>
-
 <button id="cerrarVacio" class="btn-cerrar">
-Aceptar
+    Aceptar
 </button>
-
 </div>
-
 </div>
-
 <script>
-
 const carrito = document.querySelector(".productos-carrito");
-
 const subtotalTexto = document.getElementById("subtotal");
-
 function actualizarSubtotal(){
-
 let subtotal = 0;
-
 const productos = document.querySelectorAll(".item-carrito");
-
 productos.forEach(producto => {
-
 const precioTexto = producto.querySelector(".precio").textContent;
-
 const cantidad = parseInt(
 producto.querySelector(".cantidad").textContent
 );
-
 const precio = parseInt(
 precioTexto.replace("$","").replace(/\./g,"")
 );
-
 subtotal += precio * cantidad;
-
 });
-
 subtotalTexto.textContent =
 "$" + subtotal.toLocaleString("es-CO");
-
 }
-
 function activarBotones(){
-
 const botonesMas = document.querySelectorAll(".mas");
-
 const botonesMenos = document.querySelectorAll(".menos");
-
 const botonesEliminar = document.querySelectorAll(".eliminar");
-
 botonesMas.forEach(boton => {
-
 boton.onclick = () => {
-
 const cantidad =
 boton.parentElement.querySelector(".cantidad");
-
 cantidad.textContent =
 parseInt(cantidad.textContent) + 1;
-
 actualizarSubtotal();
-
 };
-
 });
-
 botonesMenos.forEach(boton => {
-
 boton.onclick = () => {
-
 const cantidad =
 boton.parentElement.querySelector(".cantidad");
-
 let valor = parseInt(cantidad.textContent);
-
 if(valor > 1){
-
 cantidad.textContent = valor - 1;
-
 actualizarSubtotal();
-
 }
-
 };
-
 });
-
 botonesEliminar.forEach(boton => {
-
 boton.onclick = () => {
-
 const item =
 boton.closest(".item-carrito");
-
 const nombre =
 item.querySelector("h3").textContent;
-
 item.remove();
-
 let carritoActual =
 JSON.parse(localStorage.getItem("carrito")) || [];
-
 const index =
 carritoActual.findIndex(producto =>
 producto.nombre === nombre
 );
-
 if(index !== -1){
-
 carritoActual.splice(index,1);
-
 }
-
 localStorage.setItem(
 "carrito",
 JSON.stringify(carritoActual)
 );
-
 actualizarSubtotal();
-
 };
-
 });
-
 }
-
 const botonesAgregar =
 document.querySelectorAll(".agregar-recomendado");
-
 botonesAgregar.forEach(boton => {
-
 boton.addEventListener("click", () => {
-
 const nombre = boton.dataset.nombre;
-
 const precio = boton.dataset.precio;
-
 const imagen = boton.dataset.img;
-
 const nuevoProducto = document.createElement("div");
-
 nuevoProducto.classList.add("item-carrito");
-
 nuevoProducto.innerHTML = `
-
 <img src="${imagen}" alt="${nombre}">
-
 <div class="info-producto">
-
 <h3>${nombre}</h3>
-
 <p>Producto agregado al carrito.</p>
-
 <span class="precio">
 $${parseInt(precio).toLocaleString("es-CO")}
 </span>
-
 <div class="controles">
-
 <button class="menos">-</button>
-
 <span class="cantidad">1</span>
-
 <button class="mas">+</button>
-
 <button class="eliminar">
 Eliminar
 </button>
-
 </div>
-
 </div>
-
 `;
-
 carrito.appendChild(nuevoProducto);
-
 const producto = {
 nombre: nombre,
 precio: "$" + parseInt(precio).toLocaleString("es-CO"),
 imagen: imagen
 };
-
 const carritoActual =
 JSON.parse(localStorage.getItem("carrito")) || [];
-
 carritoActual.push(producto);
-
 localStorage.setItem(
 "carrito",
 JSON.stringify(carritoActual)
 );
-
 activarBotones();
-
 actualizarSubtotal();
-
 });
-
 });
-
 const productosGuardados =
 JSON.parse(localStorage.getItem("carrito")) || [];
-
 productosGuardados.forEach(producto => {
-
 const nuevoProducto =
 document.createElement("div");
-
 nuevoProducto.classList.add("item-carrito");
-
 nuevoProducto.innerHTML = `
-
 <img src="${producto.imagen}" alt="${producto.nombre}">
-
 <div class="info-producto">
-
 <h3>${producto.nombre}</h3>
-
 <p>Producto agregado al carrito.</p>
-
 <span class="precio">
 ${producto.precio}
 </span>
-
 <div class="controles">
-
 <button class="menos">-</button>
-
 <span class="cantidad">1</span>
-
 <button class="mas">+</button>
-
 <button class="eliminar">
 Eliminar
 </button>
-
 </div>
-
 </div>
-
 `;
-
 carrito.appendChild(nuevoProducto);
-
 });
-
 activarBotones();
-
 actualizarSubtotal();
-
 const btnPagar =
 document.getElementById("btnPagar");
-
 btnPagar.addEventListener("click", () => {
-
 const productos =
 document.querySelectorAll(".item-carrito");
-
 if(productos.length === 0){
-
 document.getElementById("mensajeVacio")
 .style.display = "flex";
-
 return;
-
 }
-
 const inputs =
 document.querySelectorAll(
 ".formulario-pago input, .direccion-envio input"
 );
-
 let formularioCompleto = true;
-
 inputs.forEach(input => {
-
 if(input.value.trim() === ""){
-
 formularioCompleto = false;
-
 input.style.border = "2px solid red";
-
 }
-
 else{
-
 input.style.border = "2px solid #3d5a1d";
 }
 });
@@ -585,34 +338,23 @@ return;
 }
 document.getElementById("mensajeError")
 .style.display = "none";
-
 const mensaje =
 document.getElementById("mensajeCompra");
-
 mensaje.style.display = "flex";
-
 localStorage.removeItem("carrito");
-
 });
-
 const cerrarMensaje =
 document.getElementById("cerrarMensaje");
-
 cerrarMensaje.addEventListener("click", () => {
-
 document.getElementById("mensajeCompra")
 .style.display = "none";
-
 location.reload();
 });
 const cerrarVacio =
 document.getElementById("cerrarVacio");
-
 cerrarVacio.addEventListener("click", () => {
-
 document.getElementById("mensajeVacio")
 .style.display = "none";
-
 });
 </script>
 </body>
