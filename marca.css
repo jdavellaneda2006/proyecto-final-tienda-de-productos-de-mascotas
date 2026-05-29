@@ -42,7 +42,6 @@ body{
     color: #f7eb85;
 }
 
-
 .hero{
     height: 90vh;
     background: #3d5a1d;
@@ -109,8 +108,6 @@ body{
     display: block;
 }
 
-
-
 .card{
     width: 320px;
     background: white;
@@ -155,8 +152,6 @@ body{
     margin-bottom: 15px;
 }
 
-
-
 .btn-carrito,
 .btn-agregar{
     margin-top: 20px;
@@ -179,8 +174,6 @@ body{
     transform: scale(1.03);
 }
 
-
-
 .nosotros{
     background: #3d5a1d;
     padding: 100px 80px;
@@ -202,8 +195,6 @@ body{
     color: white;
 }
 
-
-
 .contacto{
     padding: 80px;
     text-align: center;
@@ -220,8 +211,6 @@ body{
 .contacto p{
     margin-bottom: 10px;
 }
-
-
 
 .footer{
     background: #3d5a1d;
@@ -266,8 +255,6 @@ body{
     font-size: 14px;
     color: white;
 }
-
-
 
 .mensaje-agregado{
     position: fixed;
