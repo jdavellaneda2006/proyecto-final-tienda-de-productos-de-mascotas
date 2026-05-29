@@ -175,48 +175,48 @@ body{
 
 @keyframes aparecer{
     from{
-        transform: scale(0.7);
-        opacity: 0;
-    }
+ transform: scale(0.7);
+ opacity: 0;
+}
 
-    to{
-        transform: scale(1);
-        opacity: 1;
-    }
+to{
+ transform: scale(1);
+ opacity: 1;
+}
 
 }
 
 @media(max-width: 768px){
 
-    .navbar{
-        flex-direction: column;
-        gap: 20px;
-        padding: 25px;
-    }
+.navbar{
+flex-direction: column;
+ gap: 20px;
+ padding: 25px;
+}
 
-    .producto-container{
-        padding: 50px 25px;
-    }
+.producto-container{
+padding: 50px 25px;
+}
 
-    .imagen-producto img{
-        width: 100%;
-    }
+.imagen-producto img{
+width: 100%;
+}
 
-    .info-producto{
-        padding: 35px;
-    }
+.info-producto{
+padding: 35px;
+}
 
-    .info-producto h2{
-        font-size: 45px;
-        text-align: center;
-    }
+.info-producto h2{
+ font-size: 45px;
+ text-align: center;
+}
 
-    .descripcion{
-        text-align: center;
-    }
+.descripcion{
+  text-align: center;
+ }
 
-    .precio{
-        text-align: center;
-    }
+ .precio{
+ text-align: center;
+ }
 
 }
