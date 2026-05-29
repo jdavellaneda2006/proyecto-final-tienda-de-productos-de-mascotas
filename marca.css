@@ -16,12 +16,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 25px 70px;
-    background: #81a46c;
+    background: #3d5a1d;
 }
 
 .logo{
     font-family: 'Bauhaus', sans-serif;
-    color: #ffe500;
+    color: #f7eb85;
     font-size: 40px;
 }
 
@@ -39,13 +39,13 @@ body{
 }
 
 .menu a:hover{
-    color: #ffe500;
+    color: #f7eb85;
 }
 
 
 .hero{
     height: 90vh;
-    background: #81a46c;
+    background: #3d5a1d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,19 +60,19 @@ body{
     font-family: 'Bauhaus', sans-serif;
     font-size: 70px;
     margin-bottom: 25px;
-    color: #ffe500;
+    color: #f7eb85;
 }
 
 .hero-contenido p{
     font-size: 22px;
     margin-bottom: 35px;
-    color: black;
+    color: white;
 }
 
 .btn{
     display: inline-block;
     padding: 18px 35px;
-    background: #ffe500;
+    background: #f7eb85;
     color: black;
     border-radius: 15px;
     text-decoration: none;
@@ -85,13 +85,13 @@ body{
 
 .productos{
     padding: 100px 80px;
-    background: #ffe500;
+    background: #f7eb85;
 }
 
 .titulo-seccion{
     font-family: 'Bauhaus', sans-serif;
     font-size: 55px;
-    color: #81a46c;
+    color: #3d5a1d;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -137,7 +137,7 @@ body{
 
 .info-card h3{
     font-family: 'Bauhaus', sans-serif;
-    color: #81a46c;
+    color: #3d5a1d;
     margin-bottom: 15px;
     font-size: 30px;
 }
@@ -149,7 +149,7 @@ body{
 }
 
 .info-card span{
-    color: #81a46c;
+    color: #3d5a1d;
     font-size: 20px;
     display: block;
     margin-bottom: 15px;
@@ -164,7 +164,7 @@ body{
     padding: 14px;
     border: none;
     border-radius: 12px;
-    background: #81a46c;
+    background: #3d5a1d;
     color: white;
     font-family: 'Sigmar One', sans-serif;
     cursor: pointer;
@@ -182,7 +182,7 @@ body{
 
 
 .nosotros{
-    background: #81a46c;
+    background: #3d5a1d;
     padding: 100px 80px;
     text-align: center;
 }
@@ -190,7 +190,7 @@ body{
 .contenido-nosotros h2{
     font-family: 'Bauhaus', sans-serif;
     font-size: 55px;
-    color: #ffe500;
+    color: #f7eb85;
     margin-bottom: 25px;
 }
 
@@ -207,13 +207,13 @@ body{
 .contacto{
     padding: 80px;
     text-align: center;
-    background: #ffe500;
+    background: #f7eb85;
 }
 
 .contacto h2{
     font-family: 'Bauhaus', sans-serif;
     font-size: 50px;
-    color: #81a46c;
+    color: #3d5a1d;
     margin-bottom: 25px;
 }
 
@@ -224,7 +224,7 @@ body{
 
 
 .footer{
-    background: #81a46c;
+    background: #3d5a1d;
     padding: 60px 20px;
     text-align: center;
 }
@@ -253,7 +253,7 @@ body{
 .footer h3{
     font-family: 'Bauhaus', sans-serif;
     font-size: 45px;
-    color: #ffe500;
+    color: #f7eb85;
     margin-bottom: 15px;
 }
 
@@ -273,7 +273,7 @@ body{
     position: fixed;
     top: 30px;
     right: 30px;
-    background: #81a46c;
+    background: #3d5a1d;
     color: white;
     padding: 18px 25px;
     border-radius: 15px;
