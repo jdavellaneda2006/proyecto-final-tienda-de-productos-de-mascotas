@@ -1,163 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VitalPet</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VitalPet</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
-
-    <link rel="stylesheet" href="marca.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
+<link rel="stylesheet" href="marca.css">
 
 </head>
-
 <body>
-
 <header>
-
-    <nav class="navbar">
-
-        <h1 class="logo">VitalPet</h1>
-
-        <ul class="menu">
-
-            <li><a href="#inicio">Inicio</a></li>
-
-            <li><a href="#productos">Productos</a></li>
-
-            <li><a href="carrito.html">Carrito</a></li>
-
-            <li><a href="#nosotros">Nosotros</a></li>
-
-            <li><a href="#contacto">Contacto</a></li>
-
-        </ul>
-
-    </nav>
+<nav class="navbar">
+<h1 class="logo">VitalPet</h1>
+ <ul class="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+<li><a href="#nosotros">Nosotros</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
 
 </header>
 
 <section class="hero" id="inicio">
 
-    <div class="hero-contenido">
+<div class="hero-contenido">
+<h2>
+Bienestar y cuidado para tus mascotas
+ </h2>
+<p>
+  Productos de higiene, alimentación y entretenimiento
+diseñados para mejorar la vida de tus mascotas.
+ </p>
+<a href="#productos" class="btn">
+Explorar productos
+</a>
 
-        <h2>
-            Bienestar y cuidado para tus mascotas
-        </h2>
-
-        <p>
-            Productos de higiene, alimentación y entretenimiento
-            diseñados para mejorar la vida de tus mascotas.
-        </p>
-
-        <a href="#productos" class="btn">
-            Explorar productos
-        </a>
-
-    </div>
+</div>
 
 </section>
 
 <section class="productos" id="productos">
 
-    <h2 class="titulo-seccion">
-        Productos Destacados
-    </h2>
+<h2 class="titulo-seccion">
+  Productos Destacados
+ </h2>
 
-    <div class="contenedor-productos">
+<div class="contenedor-productos">
+ <a href="Shampoo Natural PETRA.html" class="producto-link">
 
-        <a href="Shampoo Natural PETRA.html" class="producto-link">
+<div class="card">
+<img src="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo PETRA">
+<div class="info-card">
 
-        <div class="card">
+<h3>Shampoo PETRA aloe vera</h3>
 
-            <img src="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg" alt="Shampoo PETRA">
+<p>Cuidado e higiene natural para tu mascota.</p>
 
-            <div class="info-card">
+<span>$25.000</span>
 
-                <h3>Shampoo PETRA</h3>
+<button class="btn-carrito"
+ data-nombre="Shampoo PETRA"
+data-precio="25000"
+data-img="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg">
+Agregar al carrito
 
-                <p>Cuidado e higiene natural.</p>
+</button>
+</div>
+</div>
 
-                <span>$25.000</span>
+</a>
+<a href="Alimento premium DOG SHOW.html" class="producto-link">
 
-                <button class="btn-carrito"
-                data-nombre="Shampoo PETRA"
-                data-precio="25000"
-                data-img="https://agrofertas.co/images/detailed/7/petra_aloe_2020.jpg">
+<div class="card">
 
-                    Agregar al carrito
+<img src="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="Alimento">
+ <div class="info-card">
 
-                </button>
+<h3>Alimento Premium DOG CHOW</h3>
 
-            </div>
+ <p>Nutrición saludable y balanceada.</p>
 
-        </div>
+<span>$40.000</span>
 
-        </a>
+<button class="btn-carrito"
+data-nombre="Alimento Premium DOG CHOW"
+ data-precio="40000"
+ data-img="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png">
 
-        <a href="Alimento premium DOG SHOW.html" class="producto-link">
+Agregar al carrito
 
-        <div class="card">
+ </button>
+</div>
+</div>
+</a>
+ <a href="Juguete interactivo UGA BONE.html" class="producto-link">
+<div class="card">
 
-            <img src="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="Alimento">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s" alt="Juguete">
 
-            <div class="info-card">
+<div class="info-card">
 
-                <h3>Alimento Premium DOG CHOW</h3>
+<h3>Juguete Interactivo Uga bone</h3>
 
-                <p>Nutrición saludable y balanceada.</p>
+<p>Diversión y entretenimiento.</p>
 
-                <span>$40.000</span>
+ <span>$18.000</span>
+ <button class="btn-carrito" data-nombre="Juguete Interactivo Uga bone"
+data-precio="18000"
+data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s">
+Agregar al carrito
+</button>
 
-                <button class="btn-carrito"
-                data-nombre="Alimento Premium DOG CHOW"
-                data-precio="40000"
-                data-img="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png">
+</div>
 
-                    Agregar al carrito
-
-                </button>
-
-            </div>
-
-        </div>
-
-        </a>
-        <a href="Juguete interactivo UGA BONE.html" class="producto-link">
-
-        <div class="card">
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s" alt="Juguete">
-
-            <div class="info-card">
-
-                <h3>Juguete Interactivo Uga bone</h3>
-
-                <p>Diversión y entretenimiento.</p>
-
-                <span>$18.000</span>
-
-                <button class="btn-carrito"
-                data-nombre="Juguete Interactivo Uga bone"
-                data-precio="18000"
-                data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT826ceS5fOblAXScVLiNWL9krljFwjLWAwTA&s">
-
-                    Agregar al carrito
-
-                </button>
-
-            </div>
-
-        </div>
-
-        </a>
+ </div>
+</a>
 <a href="Cama Suave dona gris alelí.html" class="producto-link">
 
 <div class="card">
@@ -168,14 +131,38 @@
 
 <h3>Cama Suave Dona Gris Alelí</h3>
 
-<p>
-Cama acolchonada y suave para el descanso de tu mascota.
-</p>
+<p>Cama acogedora  para el descanso de tu mascota.</p>
 
 <span>$55.000</span>
 
 <button class="btn-carrito">
 Ver producto
+</button>
+</div>
+
+</div>
+
+</a>
+
+<a href="Collar Ajustable cuero rojo.html" class="producto-link">
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
+
+<div class="info-card">
+
+<h3>Collar Ajustable</h3>
+
+<p>
+Collar cómodo y resistente para mascotas.
+</p>
+
+<span>$20.000</span>
+
+<button class="btn-agregar">
+
+Agregar al carrito
 </button>
 
 </div>
@@ -184,133 +171,56 @@ Ver producto
 
 </a>
 
-        <a href="Collar Ajustable cuero rojo.html" class="producto-link">
+ <a href="Snacks saludables happy tails.html" class="producto-link">
 
-        <div class="card">
+ <div class="card">
 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar">
+<img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks">
 
-            <div class="info-card">
+ <div class="info-card">
 
-                <h3>Collar Ajustable, cuero rojo</h3>
+ <h3>Snacks Saludables Happy Tails</h3>
+<p>  snacks saludables y ricos.</p>
+ <p>  Producto sin stock ⚠️</p>
 
-                <p>Seguridad y estilo.</p>
+<button class="btn-agregar">
+Ver producto
+</button>
 
-                <span>$20.000</span>
+</div>
+    
+</div>
 
-                <button class="btn-carrito"
-                data-nombre="Collar Ajustable cuero rojo"
-                data-precio="20000"
-                data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s">
-
-                    Agregar al carrito
-
-                </button>
-
-            </div>
-
-        </div>
-
-        </a>
-
-
-
-        <a href="Snacks saludables happy tails.html" class="producto-link">
-
-        <div class="card">
-
-            <img src="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg" alt="Snacks">
-
-            <div class="info-card">
-
-                <h3>Snacks saludables happy tails</h3>
-
-                <p>Premios nutritivos.</p>
-
-                <span>$15.000</span>
-
-                <button class="btn-carrito"
-                data-nombre="Snacks saludables happy tails"
-                data-precio="15000"
-                data-img="https://4hunters.com.co/wp-content/uploads/2024/04/IMG_1721-Photoroom.jpg">
-
-                    Agregar al carrito
-
-                </button>
-
-            </div>
-
-        </div>
-
-        </a>
-
-    </div>
-
+</a>
 </section>
-
 <section class="nosotros" id="nosotros">
+ <div class="contenido-nosotros">
 
-    <div class="contenido-nosotros">
-
-        <h2>
-            Sobre VitalPet
-        </h2>
-
-        <p>
-            Somos una tienda enfocada en el bienestar,
-            cuidado y comodidad de las mascotas.
-            Buscamos brindar una experiencia amigable,
-            rápida y confiable para cada usuario.
-        </p>
-
-    </div>
-
+<h2>
+ Sobre VitalPet
+</h2>
+<p>Somos una tienda enfocada en el bienestar, cuidado y comodidad de las mascotas.  </p>
+ <p>Buscamos brindar una experiencia amigable, rápida y confiable para cada usuario. Ofreciendo productos de alta calidad para mejorar la vida de perros y gatos.
+ trabajamos para ofrecer alimentos, accesorios, juguetes y productos esenciales que aporten felicidad, salud y comodidad a cada compañero peludo. Nuestro objetivo es crear un espacio moderno y seguro donde los clientes puedan encontrar todo lo necesario para el cuidado de sus mascotas de manera fácil y confiable.
+   </p>
+</div>
 </section>
-
 <section class="contacto" id="contacto">
-
-    <h2>
-        Contáctanos
-    </h2>
-
-    <p>vitalpet@gmail.com</p>
-
-    <p>+57 302 8391 656</p>
+  <h2>
+ Contáctanos
+</h2>
+<p> vitalpet@gmail.com</p>
+<p>Numero de telefono: +57 302 8391 656</p>
 
 </section>
-
 <footer class="footer">
+<h3>VitalPet</h3>
 
-    <h3>VitalPet</h3>
-
-    <p>
-        Síguenos en nuestras redes sociales
-    </p>
-
-    <div class="redes-sociales">
-
-        <a href="#">
-            <img src="https://www.freeiconspng.com/uploads/youtube-logo-png-photo-0.png" alt="YouTube">
-        </a>
-
-        <a href="#">
-            <img src="https://images.icon-icons.com/4029/PNG/512/twitter_x_new_logo_x_rounded_icon_256078.png" alt="X">
-        </a>
-
-        <a href="#">
-            <img src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logo.png" alt="Instagram">
-        </a>
-
-    </div>
-
-    <p class="copy">
-        © 2026 VitalPet - Todos los derechos reservados
-    </p>
-
+ <p class="copy">
+  © 2026 VitalPet - Todos los derechos reservados
+ </p>
 </footer>
-
 <script>
-
 const botonesCarrito =
 document.querySelectorAll(".btn-carrito");
 
