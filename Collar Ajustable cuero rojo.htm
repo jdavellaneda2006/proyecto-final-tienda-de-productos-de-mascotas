@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collar Ajustable VitalPet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
+<link rel="stylesheet" href="Collar Ajustable cuero rojo.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<h1 class="logo">VitalPet</h1>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="index.html#productos">Productos</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+<li><a href="index.html#contacto">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<section class="producto-container">
+<div class="imagen-producto">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s" alt="Collar Ajustable">
+</div>
+<div class="info-producto">
+<h2>Collar Ajustable</h2>
+<p class="descripcion">
+Collar cómodo, resistente y ajustable para perros y gatos.
+Fabricado con materiales suaves y seguros para brindar
+comodidad durante paseos y actividades diarias.
+</p>
+<span class="precio">$20.000</span>
+<button id="agregarCarrito">
+Agregar al carrito
+</button>
+</div>
+</section>
+<div class="modal-agregado" id="modalAgregado">
+<div class="modal-contenido">
+<h2>¡Producto agregado!</h2>
+<p>El producto fue añadido correctamente al carrito 🐾</p>
+<button id="cerrarModal">
+Aceptar
+</button>
+</div>
+</div>
+<script>
+const boton =
+document.getElementById("agregarCarrito");
+boton.addEventListener("click", () => {
+const producto = {
+nombre: "Collar Ajustable",
+precio: "$20.000",
+imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2NCwDArTT1W81SlkT0nIRU0Vz9pP0z03KKQ&s"
+};
+let carrito =
+JSON.parse(localStorage.getItem("carrito")) || [];
+carrito.push(producto);
+localStorage.setItem(
+"carrito",
+JSON.stringify(carrito)
+);
+document.getElementById("modalAgregado")
+.style.display = "flex";
+});
+document.getElementById("cerrarModal")
+.addEventListener("click", () => {
+document.getElementById("modalAgregado")
+.style.display = "none";
+});
+</script>
+</body>
+</html>
