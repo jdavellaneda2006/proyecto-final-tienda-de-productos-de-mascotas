@@ -15,7 +15,7 @@ Para el desarrollo del proyecto se utilizaron las siguientes herramientas:
 Visual Studio Code: Utilizado para la creacion y modificacion del codigo fuente.
 HTML 5:Utilizado para la estructuracion del contenido del proyecto. 
 CSS3: Diseño visual, estilos, animaciones y adaptacion a distintos dispositivos.
-JavaScript:Implementado pára la logica de la pagina web, validaciones, funcionamiento del carrito y el almacenamiento de datos.
+JavaScript:Implementado pára la logica de la pagina web, validaciones, funcionamiento del carrito y el almacenamiento de datos. JavaScript se encuentra en los archivos HTMLs mediante la etiqueta <script>.Tomamos la decision de desarrollarlo de esta manera para facilitar el desarrollo y mejorar la organizacion del proyecto durante su ejecucion, permitiendo que la logica correspondiente esctuviera ubicada junto a su estructura HTML correspondiente.
 Github: Utilizado para alamcenar el repositorio y gestionar el proyecto.
 Google Fonts: utilizado para integrar tipografías personalizadas para el proyecto.
 CDN Fonts: utilizado para incorporar la fuente Bauhaus en la pagina web.
