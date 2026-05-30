@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alimento Premium DOG CHOW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bauhaus" rel="stylesheet">
+<link rel="stylesheet" href="Alimento premium DOG SHOW.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<h1 class="logo">VitalPet</h1>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="carrito.html">Carrito</a></li>
+</ul>
+</nav>
+</header>
+<section class="producto-container">
+<div class="imagen-producto">
+<img src="https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png" alt="DOG CHOW">
+</div>
+<div class="info-producto">
+<h2>Alimento Premium DOG CHOW</h2>
+<p class="descripcion">
+Alimento balanceado para perros con proteínas,
+vitaminas y minerales esenciales.
+Ayuda a fortalecer los huesos, mejorar la digestión
+y mantener una alimentación saludable para tu mascota.
+</p>
+<span class="precio">
+$40.000
+</span>
+<button id="agregarCarrito">
+Agregar al carrito
+</button>
+</div>
+</section>
+<div class="modal-agregado" id="modalAgregado">
+<div class="modal-contenido">
+<h2>¡Producto agregado!</h2>
+<p>El producto fue añadido correctamente al carrito 🐾</p>
+<button id="cerrarModal">
+Cerrar
+</button>
+</div>
+</div>
+<script>
+const botonAgregar =
+document.getElementById("agregarCarrito");
+botonAgregar.addEventListener("click", () => {
+const producto = {
+nombre: "Alimento DOG CHOW",
+precio: "$40.000",
+imagen:
+"https://purina.com.co/sites/default/files/2026-03/7501072220875_1.png"
+};
+let carrito =
+JSON.parse(localStorage.getItem("carrito")) || [];
+carrito.push(producto);
+localStorage.setItem(
+"carrito",
+JSON.stringify(carrito)
+);
+document.getElementById("modalAgregado")
+.style.display = "flex";
+});
+const cerrarModal =
+document.getElementById("cerrarModal");
+cerrarModal.addEventListener("click", () => {
+document.getElementById("modalAgregado")
+.style.display = "none";
+});
+</script>
+</body>
+</html>
