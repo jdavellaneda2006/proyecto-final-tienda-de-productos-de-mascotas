@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Sigmar One', sans-serif;
+    background: #f7eb85;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    background: #3d5a1d;
+}
+
+.logo{
+    font-family: 'Bauhaus', sans-serif;
+    color: #f7eb85;
+    font-size: 55px;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #f7eb85;
+}
+
+.producto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 80px;
+    flex-wrap: wrap;
+}
+
+.imagen-producto{
+    background: white;
+    padding: 30px;
+    border-radius: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.imagen-producto:hover{
+    transform: translateY(-8px);
+}
+
+.imagen-producto img{
+    width: 400px;
+    border-radius: 25px;
+}
+
+.info-producto{
+    background: white;
+    padding: 50px;
+    border-radius: 35px;
+    max-width: 550px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.info-producto h2{
+    font-family: 'Bauhaus', sans-serif;
+    font-size: 65px;
+    color: #3d5a1d;
+    margin-bottom: 25px;
+}
+
+.descripcion{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.precio{
+    display: block;
+    font-size: 45px;
+    color: #3d5a1d;
+    margin-bottom: 35px;
+}
+
+#agregarCarrito{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 18px;
+    background: #3d5a1d;
+    color: white;
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#agregarCarrito:hover{
+    background: black;
+    transform: scale(1.03);
+}
+
+#agregarCarrito:active{
+    transform: scale(0.96);
+}
+
+.modal-agregado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-contenido{
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    animation: aparecer 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modal-contenido h2{
+    font-family: 'Bauhaus', sans-serif;
+    font-size: 55px;
+    color: #3d5a1d;
+    margin-bottom: 20px;
+}
+
+.modal-contenido p{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#cerrarModal{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    background: #3d5a1d;
+    color: white;
+    font-family: 'Sigmar One', sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#cerrarModal:hover{
+    background: black;
+    transform: scale(1.05);
+}
+
+@keyframes aparecer{
+    from{
+ transform: scale(0.7);
+ opacity: 0;
+}
+
+to{
+ transform: scale(1);
+ opacity: 1;
+}
+
+}
+
+@media(max-width: 768px){
+
+.navbar{
+flex-direction: column;
+ gap: 20px;
+ padding: 25px;
+}
+
+.producto-container{
+padding: 50px 25px;
+}
+
+.imagen-producto img{
+width: 100%;
+}
+
+.info-producto{
+padding: 35px;
+}
+
+.info-producto h2{
+ font-size: 45px;
+ text-align: center;
+}
+
+.descripcion{
+  text-align: center;
+ }
+
+ .precio{
+ text-align: center;
+ }
+
+}
