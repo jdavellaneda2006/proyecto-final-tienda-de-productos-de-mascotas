@@ -48,11 +48,8 @@ marca.css
 .multimedia 
 imagenes
 
-
-
-
-Capturas de pantalla del proyecto 
-
+.READ.MD
+README.MD
 
 
 
